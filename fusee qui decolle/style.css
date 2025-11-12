@@ -1,0 +1,84 @@
+
+body{
+  background-image: url(images/2303.w026.n002.3329B.p1.3329.jpg);
+  background-image: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1{
+  text-align: center;
+  color: black;
+  font-size: 60px;
+}
+
+div{
+display: flex;
+justify-content: center;
+}
+
+button{
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+button:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+p{
+  color: black;
+  text-align: center;
+}
+
+
+
+.decollage {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ff0000;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+.decollage.active {
+  animation: countdown 1s ease-in-out;
+}
+
+
+
+img.imgfusee{
+  width: 120px;
+  height: 200px;
+  position: absolute;
+  left: 800px;
+  top : 400px;
+
+}
+
+/* Animation du chiffre de décompte */
+@keyframes countdown {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+}
